@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hugo usage protocol | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="What is hugoBase on Go language. How to start hugo Install hugo by brew on macOS  12$ brew install hugo Determine whether the installlation of hugo is successful 12$ hugo version  Create blog  12$ hug">
+  <meta name="description" content="What is hugoBase on Go language. How to start hugo1.Install hugo by brew on macOS 1$ brew install hugo Determine whether the installlation of hugo is successful 1$ hugo version 2.Create blog 1$ hugo n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hugo usage protocol">
 <meta property="og:url" content="http://example.com/2022/01/22/Hugo-usage-protocol/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="What is hugoBase on Go language. How to start hugo Install hugo by brew on macOS  12$ brew install hugo Determine whether the installlation of hugo is successful 12$ hugo version  Create blog  12$ hug">
+<meta property="og:description" content="What is hugoBase on Go language. How to start hugo1.Install hugo by brew on macOS 1$ brew install hugo Determine whether the installlation of hugo is successful 1$ hugo version 2.Create blog 1$ hugo n">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-22T08:51:01.000Z">
-<meta property="article:modified_time" content="2022-01-22T09:38:33.344Z">
+<meta property="article:modified_time" content="2022-01-22T09:43:49.744Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -175,43 +175,29 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="What-is-hugo"><a href="#What-is-hugo" class="headerlink" title="What is hugo"></a>What is hugo</h1><p>Base on Go language.</p>
-<h1 id="How-to-start-hugo"><a href="#How-to-start-hugo" class="headerlink" title="How to start hugo"></a>How to start hugo</h1><ol>
-<li>Install hugo by brew on macOS</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ brew install hugo</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="How-to-start-hugo"><a href="#How-to-start-hugo" class="headerlink" title="How to start hugo"></a>How to start hugo</h1><p>1.Install hugo by brew on macOS</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install hugo</span><br></pre></td></tr></table></figure>
 <p>Determine whether the installlation of hugo is successful</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hugo version</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>Create blog</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hugo new site myblog</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hugo version</span><br></pre></td></tr></table></figure>
+<p>2.Create blog</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hugo new site myblog</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li>Themes of setting</li>
-</ol>
+<p>3.Themes of setting</p>
 <p>Enter <a target="_blank" rel="noopener" href="http://themes.gohugo.io/">http://themes.gohugo.io</a> to determine a theme and download it by git(clone the repository into themes/ directory)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd [path]</span><br><span class="line">$ git clone https://github.com/your-identity/hugo-theme-dimension.git themes/dimension</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd [path]</span><br><span class="line">$ git clone https://github.com/your-identity/hugo-theme-dimension.git themes/dimension</span><br></pre></td></tr></table></figure>
 <p>Add this line in the config.toml file</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ theme = &#x27;dimension&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ theme = &#x27;dimension&#x27;</span><br></pre></td></tr></table></figure>
 
-<ol start="4">
-<li>Startup locally your blog</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hugo server -t dimension --buildDrafts</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>4.Startup locally your blog</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hugo server -t dimension --buildDrafts</span><br></pre></td></tr></table></figure>
 
-<ol start="5">
-<li>Create a new article</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hugo new post/blog.md</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li>Write contents by vscode</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hugo server -t dimension --buildDrafts</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>5.Create a new article</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hugo new post/blog.md</span><br></pre></td></tr></table></figure>
+<p>6.Write contents by vscode</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hugo server -t dimension --buildDrafts</span><br></pre></td></tr></table></figure>
 <p>Notice:run it under the root directory</p>
-<ol start="7">
-<li>Deployment</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- git init</span><br><span class="line">- git add .</span><br><span class="line">- git commit -m &#x27;hugo first submit&#x27;</span><br><span class="line">- git remote add origin htttp://github.com/OneJessica/OneJessica.github.io.git</span><br><span class="line">- git push -u origin master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>7.Deployment</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- git init</span><br><span class="line">- git add .</span><br><span class="line">- git commit -m &#x27;hugo first submit&#x27;</span><br><span class="line">- git remote add origin htttp://github.com/OneJessica/OneJessica.github.io.git</span><br><span class="line">- git push -u origin master</span><br></pre></td></tr></table></figure>
       
 
       
